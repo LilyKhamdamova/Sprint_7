@@ -14,7 +14,8 @@ public class Client {
 
     public static RequestSpecification getRequestSpecification() {
         return given().log().all()
-                .contentType(ContentType.JSON);
+                .contentType(ContentType.JSON)
+                .baseUri(BASE_URI);
     }
 
 }

@@ -1,15 +1,10 @@
-
-
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
-import org.example.Client;
 import org.example.courier.Courier;
 import org.example.courier.CourierChecks;
 import org.example.courier.CourierClient;
 import org.example.courier.CourierCredentials;
-import org.junit.Before;
 import org.junit.Test;
 
 public class CourierLoginTest {
@@ -17,21 +12,21 @@ public class CourierLoginTest {
 
     private final CourierChecks check = new CourierChecks();
     private final CourierClient client = new CourierClient();
+    int courierId;
 
-    @Before
-    public void setUp() {
-        RestAssured.baseURI = Client.BASE_URI;
-    }
 
     @Test
     @DisplayName("Вход с правильными учетными данными /courier/login")
     @Description("Проверка успешного входа курьера с правильными учетными данными")
 
     public void testCourierLoginSuccess() {
-        var courier = Courier.generic();
+        var courier = Courier.random();
+        ValidatableResponse createResponse = client.createCourier(courier);
+        check.createdSuccessfully(createResponse);
+
         var creds = CourierCredentials.from(courier);
         ValidatableResponse loginResponse = client.loginCourier(creds);
-        check.loggedInSuccessfully(loginResponse);
+        courierId = check.loggedInSuccessfully(loginResponse);
     }
 
     @Test

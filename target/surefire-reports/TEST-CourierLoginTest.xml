@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CourierLoginTest" time="68.358" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CourierLoginTest" time="73.903" tests="5" errors="0" skipped="0" failures="2">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire/surefirebooter11438060403855542063.jar /Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire 2024-05-05T14-11-25_646-jvmRun1 surefire14741352880130359754tmp surefire_07425420109145809466tmp"/>
+    <property name="sun.java.command" value="/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire/surefirebooter3115302230146183798.jar /Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire 2024-05-07T22-34-04_679-jvmRun1 surefire15813692439635122100tmp surefire_08275509393610146165tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/test-classes:/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/classes:/Users/lilykhamdamova/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/Users/lilykhamdamova/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/lilykhamdamova/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/lilykhamdamova/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/lilykhamdamova/.m2/repository/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.jar:/Users/lilykhamdamova/.m2/repository/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.jar:/Users/lilykhamdamova/.m2/repository/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar:/Users/lilykhamdamova/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/lilykhamdamova/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/lilykhamdamova/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/lilykhamdamova/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/Users/lilykhamdamova/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/lilykhamdamova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/lilykhamdamova/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/lilykhamdamova/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/lilykhamdamova/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/lilykhamdamova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/lilykhamdamova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/lilykhamdamova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/lilykhamdamova/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/lilykhamdamova/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/lilykhamdamova/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/lilykhamdamova/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/lilykhamdamova/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/lilykhamdamova/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/lilykhamdamova/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/lilykhamdamova/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/lilykhamdamova/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/lilykhamdamova/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/lilykhamdamova/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/lilykhamdamova/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire/surefirebooter11438060403855542063.jar"/>
+    <property name="surefire.real.class.path" value="/Users/lilykhamdamova/IdeaProjects/7й спринт/Sprint_7/target/surefire/surefirebooter3115302230146183798.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.22+7-LTS"/>
@@ -64,12 +64,12 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testCourierLoginNoPassword" classname="CourierLoginTest" time="65.888">
+  <testcase name="testCourierLoginNoPassword" classname="CourierLoginTest" time="70.207">
     <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;504&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <504>.
 
-	at CourierLoginTest.testCourierLoginNoPassword(CourierLoginTest.java:75)
+	at CourierLoginTest.testCourierLoginNoPassword(CourierLoginTest.java:70)
 ]]></failure>
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://qa-scooter.praktikum-services.ru/api/v1/courier/login
@@ -103,14 +103,67 @@ Body:
 }
 HTTP/1.1 504 Gateway time out
 Content-Length: 19
-Set-Cookie: _yasc=N3qK+hNsfBzlac5+yNbj3KFS3MpVmHaTSxE1oLf0aeftwtBHFw40kDm+4aPsesP0aA==; domain=.praktikum-services.ru; path=/; expires=Wed, 03 May 2034 09:11:34 GMT; secure
-X-Request-Id: 1714900294250198-3026952934688178256
+Set-Cookie: _yasc=Gmigt3jT6Hm9f6FPkjHBj/JzIZWfiMNd8xmBtMN1U38CDLa2OCW21oSuj9HbmjuB; domain=.praktikum-services.ru; path=/; expires=Fri, 05 May 2034 17:34:20 GMT; secure
+X-Request-Id: 1715103260186793-10429137390880735323
 
 Service unavailable
 ]]></system-out>
   </testcase>
-  <testcase name="testCourierWrongPassword" classname="CourierLoginTest" time="1.507"/>
-  <testcase name="testCourierLoginNoLogin" classname="CourierLoginTest" time="0.31"/>
-  <testcase name="testCourierLoginAccountNotFound" classname="CourierLoginTest" time="0.252"/>
-  <testcase name="testCourierLoginSuccess" classname="CourierLoginTest" time="0.193"/>
+  <testcase name="testCourierWrongPassword" classname="CourierLoginTest" time="2.01"/>
+  <testcase name="testCourierLoginNoLogin" classname="CourierLoginTest" time="0.22">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at CourierLoginTest.testCourierLoginNoLogin(CourierLoginTest.java:59)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://qa-scooter.praktikum-services.ru/api/v1/courier/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "test_kham1",
+    "password": "1234"
+}
+Request method:	POST
+Request URI:	https://qa-scooter.praktikum-services.ru/api/v1/courier/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "test_kham1",
+    "password": "1234"
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Tue, 07 May 2024 17:35:23 GMT
+ETag: W/"d-d4CSkHU8ZnFcnwRFJSiUZ5dD2yk"
+Set-Cookie: _yasc=Et32eZLtha2l92vJNr3WTFviRz8O8FBWidS0SMIGAu/UOTIabb6LPipuOQO9BiG/Rg==; domain=.praktikum-services.ru; path=/; expires=Fri, 05 May 2034 17:35:23 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1715103323293035-10477301532105724461
+
+{
+    "id": 296465
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCourierLoginAccountNotFound" classname="CourierLoginTest" time="0.291"/>
+  <testcase name="testCourierLoginSuccess" classname="CourierLoginTest" time="0.478"/>
 </testsuite>

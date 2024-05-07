@@ -15,7 +15,7 @@ public class OrderClient {
 
     @Step("Разместить заказ")
     public static Response postOrder(Order order) {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .and()
                 .body(order)
@@ -38,7 +38,7 @@ public class OrderClient {
 
     @Step("Получить заказы по ID курьера")
     public static Response getOrdersByCourierId(int courierId) {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .queryParam("courierId", courierId)
                 .when()
@@ -47,7 +47,7 @@ public class OrderClient {
 
     @Step("Получить доступные заказы")
     public static Response getAvailableOrders(int limit, int page) {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .queryParam("limit", limit)
                 .queryParam("page", page)
@@ -58,7 +58,7 @@ public class OrderClient {
 
     @Step("Получить заказы рядом с метро")
     public static Response getOrdersNearMetroStation(int limit, int page, String nearestStation) {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .queryParam("limit", limit)
                 .queryParam("page", page)
@@ -69,7 +69,7 @@ public class OrderClient {
 
     @Step("Получить заказы на станциях метро")
     public static Response getOrdersAtStations(int courierId, String nearestStations) {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .queryParam("courierId", courierId)
                 .queryParam("nearestStation", nearestStations)
@@ -79,7 +79,7 @@ public class OrderClient {
 
     @Step("Проверить, список заказов пришел, если не передали id курьера")
     public static Response getOrdersWithoutCourierId() {
-        return given()
+        return given(Client.getRequestSpecification())
                 .contentType(ContentType.JSON)
                 .when()
                 .get(Client.ORDERS);

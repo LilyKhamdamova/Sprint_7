@@ -69,5 +69,11 @@ public class CourierChecks {
 
     @Step("Проверка: курьер успешно удален")
     public void deletedSuccesfully(ValidatableResponse response) {
+        boolean deleted = response
+                .assertThat()
+                .statusCode(HttpURLConnection.HTTP_OK)
+                .extract()
+                .path("ok");
+        assertTrue(deleted);
     }
 }

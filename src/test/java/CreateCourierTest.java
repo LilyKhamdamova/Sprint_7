@@ -1,14 +1,11 @@
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
-import org.example.Client;
 import org.example.courier.CourierChecks;
 import org.example.courier.CourierClient;
 import org.example.courier.CourierCredentials;
 import org.example.courier.Courier;
 import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Random;
@@ -28,10 +25,6 @@ public class CreateCourierTest {
         }
     }
 
-    @Before
-    public void setUp() {
-        RestAssured.baseURI = Client.BASE_URI;
-    }
 
     @Test
     @DisplayName("Создание курьера /courier")
