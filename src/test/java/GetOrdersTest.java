@@ -7,12 +7,21 @@ import org.example.courier.CourierChecks;
 import org.example.courier.CourierClient;
 import org.example.courier.CourierCredentials;
 import org.example.order.OrderClient;
+import org.junit.After;
 import org.junit.Test;
 
 public class GetOrdersTest {
     private final CourierChecks check = new CourierChecks();
     private final CourierClient client = new CourierClient();
     int courierId;
+
+    @After
+    public void deleteCourier() {
+        if (courierId != 0) {
+            ValidatableResponse response = client.deleteCourier(courierId);
+            check.deletedSuccesfully(response);
+        }
+    }
 
     @Test
     @DisplayName("Получение списка заказов /orders")

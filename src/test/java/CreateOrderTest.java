@@ -2,8 +2,12 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import org.example.courier.CourierChecks;
+import org.example.courier.CourierClient;
 import org.example.order.Order;
 import org.example.order.OrderClient;
+import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -26,10 +30,12 @@ public class CreateOrderTest {
     }
 
     private List<String> colors;
-
+    int courierId;
     public CreateOrderTest(List<String> colors) {
         this.colors = colors;
     }
+    private final CourierClient client = new CourierClient();
+    private final CourierChecks check = new CourierChecks();
 
 
     @Test
@@ -52,5 +58,13 @@ public class CreateOrderTest {
         Response response = OrderClient.postOrder(order);
         OrderClient.validateResponseStatus(response, HttpURLConnection.HTTP_CREATED);
         int orderId = OrderClient.getOrderId(response);
+    }
+
+    @After
+    public void deleteCourier() {
+        if (courierId != 0) {
+            ValidatableResponse response = client.deleteCourier(courierId);
+            check.deletedSuccesfully(response);
+        }
     }
 }
