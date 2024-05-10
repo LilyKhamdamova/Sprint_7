@@ -1,0 +1,12 @@
+/.idea
+/target
+
+
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+
+
+.allure
+/.idea/
+/target/
